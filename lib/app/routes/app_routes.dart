@@ -10,6 +10,8 @@ abstract class Routes {
   static const MAIN_TABVIEW = _Paths.MAIN_TABVIEW;
   static const POTENTIAL_CUSTOMERS = _Paths.POTENTIAL_CUSTOMERS;
   static const CUSTOMERS = _Paths.CUSTOMERS;
+  static const CREATE_POTENTIAL_CUSTOMERS = _Paths.CREATE_POTENTIAL_CUSTOMERS;
+  static const EDIT_POTENTIAL_CUSTOMERS = _Paths.EDIT_POTENTIAL_CUSTOMERS;
 }
 
 abstract class _Paths {
@@ -21,4 +23,6 @@ abstract class _Paths {
   static const MAIN_TABVIEW = '/main-tabview';
   static const POTENTIAL_CUSTOMERS = '/potential-customers';
   static const CUSTOMERS = '/customers';
+  static const CREATE_POTENTIAL_CUSTOMERS = '/create-potential-customers';
+  static const EDIT_POTENTIAL_CUSTOMERS = '/edit-potential-customers';
 }

@@ -3,7 +3,6 @@ import 'package:company_management/app/core/constants/color_constants.dart';
 import 'package:company_management/app/util/view_utils.dart';
 import 'package:flutter/material.dart';
 
-
 class CommonScaffold extends StatelessWidget {
   const CommonScaffold({
     required this.body,
@@ -25,6 +24,7 @@ class CommonScaffold extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final scaffold = Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: backgroundColor,
       body: Shimmer(child: body),
       appBar: appBar,

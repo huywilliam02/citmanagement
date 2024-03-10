@@ -11,6 +11,7 @@ class IconsUtils {
   static const String report = 'assets/images/note.png';
   static const String more = 'assets/images/more.png';
   static const String messages = 'assets/images/messages.png';
+  static const String filter = 'assets/images/filter.png';
   static const IconData add = Ionicons.add;
   static const IconData news = Ionicons.newspaper_outline;
   static const IconData daily = Ionicons.file_tray_outline;

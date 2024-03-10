@@ -1,19 +1,23 @@
-import 'package:company_management/presentation/controllers/potential_customers/bindings/potential_customers_binding.dart';
-import 'package:company_management/presentation/page/customers/customers_view.dart';
 import 'package:get/get.dart';
 
+import '../../presentation/controllers/customers/bindings/customers_binding.dart';
 import '../../presentation/controllers/forgot_password/bindings/forgot_password_binding.dart';
 import '../../presentation/controllers/home/bindings/home_binding.dart';
 import '../../presentation/controllers/login/bindings/login_binding.dart';
 import '../../presentation/controllers/main_tabview/bindings/main_tabview_binding.dart';
+import '../../presentation/controllers/potential_customers/bindings/potential_customers_binding.dart';
 import '../../presentation/controllers/splash/bindings/splash_binding.dart';
+import '../../presentation/page/customers/customers_view.dart';
 import '../../presentation/page/forgot_password/forgot_password_view.dart';
 import '../../presentation/page/home/home_view.dart';
 import '../../presentation/page/login/login_view.dart';
 import '../../presentation/page/main_tabview/main_tabview_view.dart';
-import '../../presentation/page/splash/splash_view.dart';
-import '../../presentation/controllers/customers/bindings/customers_binding.dart';
 import '../../presentation/page/potential_customers/potential_customers_view.dart';
+import '../../presentation/page/splash/splash_view.dart';
+import '../../presentation/controllers/potential_customers/bindings/create_potential_customers_binding.dart';
+import '../../presentation/page/potential_customers/create_potential_customers_view.dart';
+import '../../presentation/controllers/potential_customers/bindings/edit_potential_customers_binding.dart';
+import '../../presentation/page/potential_customers/edit_potential_customers_view.dart';
 
 part 'app_routes.dart';
 
@@ -57,6 +61,16 @@ class AppPages {
       name: _Paths.CUSTOMERS,
       page: () => const CustomersView(),
       binding: CustomersBinding(),
+    ),
+    GetPage(
+      name: _Paths.CREATE_POTENTIAL_CUSTOMERS,
+      page: () => const CreatePotentialCustomersView(),
+      binding: CreatePotentialCustomersBinding(),
+    ),
+    GetPage(
+      name: _Paths.EDIT_POTENTIAL_CUSTOMERS,
+      page: () => const EditPotentialCustomersView(),
+      binding: EditPotentialCustomersBinding(),
     ),
   ];
 }
